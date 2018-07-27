@@ -1,0 +1,35 @@
+body{
+    background-color: gray;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    text-align: center;
+}
+
+.char{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+    height: 60px;
+    width: 100px;
+    background-color: rgb(0, 252, 252);
+    border: 10px outset rgb(56, 56, 56);
+    margin: 5px;
+    float: left;  
+}
+#charPicked, #enemies, #defender{
+    width: 980px;
+    height: 150px;
+    clear: both;
+}
+
+button{
+    clear: both;
+}
+
+#battleLog{
+    width: 980px;
+    height: 50px;
+}
