@@ -1,7 +1,4 @@
 //Start the game showing all of the characters to chose from
-
-
-//try for life bars compaired to health
 $(document).ready(function () {
     var char = $(".char-select");
     var charPicked = $("#charPicked");
@@ -62,7 +59,7 @@ $(document).ready(function () {
     $("#vincent").append("<p>" + vincent.name +
         "</p><img src='assets/images/vincent.png' class='charImage'><br><p class='health'>HP: " + vincent.life + "</p>");
 
-        // A click anywere will start the game and play the battle theme
+    // A click anywere will start the game and play the battle theme
     $(document).on("click", function () {
         if (startBlock === false) {
             battleTheme.play();
@@ -114,10 +111,10 @@ $(document).ready(function () {
             $(".hero .health").text("HP: " + heroLife);
 
             console.log(heroLife);
-            charPicked.animate({left:"+=40px"},200);
-            defender.animate({left:"-=40px"},200);
-            charPicked.animate({left:"-=40px"},200);
-            defender.animate({left:"+=40px"},200);
+            charPicked.animate({ left: "+=40px" }, 200);
+            defender.animate({ left: "-=40px" }, 200);
+            charPicked.animate({ left: "-=40px" }, 200);
+            defender.animate({ left: "+=40px" }, 200);
 
             battleLog.html("<p class='bp'>" + heroName + " attacked " + defenderName + " for " + heroAttack + " Damage</p><p class='bp'>" +
                 defenderName + " attacked " + heroName + " for " + defenderCattack + " Damage</p>");
@@ -180,9 +177,4 @@ $(document).ready(function () {
             battleLog.html("You must select your Attacker and a Defenfer");
         }
     });
-
-    // function playTheme() {
-    //     battleTheme.play();
-    //     };
-    //     setTimeout(playTheme, 1000);
 });
