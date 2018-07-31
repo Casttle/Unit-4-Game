@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>RPG</title>
+    <title>FF7 Battle</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|MedievalSharp" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/cssreset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,51 +13,61 @@
 
 <body>
     <header>
-        Class RBG
+        <p style="color: rgb(10, 10, 179); font-size: 70px; text-shadow: 3px 3px black;
+            text-shadow: 1.5px 1.5px white;">
+            ARE YOU READY TO BATTLE</p>
+        <p style="font-size: 25px; color: rgb(10, 10, 179); font-size: 70px; text-shadow: 3px 3px black;
+            text-shadow: 1.5px 1.5px white;">
+            Click Anywhere to Start</p>
     </header>
-    <div id="rowHeader">Select your character</div>
+    <div id="rowHeader" style="width: 600px;">SELECT YOUR HERO</div>
     <div id="charSelect">
         <div class="char char-select" id="cloud"></div>
         <div class="char char-select" id="barret"></div>
         <div class="char char-select" id="tifa"></div>
         <div class="char char-select" id="vincent"></div>
     </div>
+<div style="width: 600px;">
+    <div id="rowHeader" style="float: left;">YOUR HERO</div>
+    <div id="rowHeader" style="float: right;">DEFENDER</div>
+</div>
 
-    <div id="rowHeader">Your character</div>
-    <div id="charPicked">
+<div style="width: 600px; height: 155px;">
+    <div id="charPicked"style="float: left;" >
        
-        
     </div>
-
-    <div id="rowHeader">Your Enemies</div>
+    <div id="defender"style="float: right;">
+       
+    </div>
+</div>
+<div id="rowHeader" style="width: 600px;">DEFENDERS REMANING</div>
     <div id="enemies">
        
         
     </div>
+<div style="height: 35px; width: 600px;">
+    <button id="attack">ATTACK</button>
+    <button id="restart" onClick="window.location.reload()">RESTART</button>
+</div>
 
-    <button id="attack">Attack</button>
-
-
-    <div id="rowHeader">Defender</div>
-    <div id="defender">
-       
-    </div>
-
+   
+   
+    
     <div id="battleLog">
         Just some text to fill the battle log
     </div>
 
-    <button id="restart">Restart</button>
+   
 
 
 
 
 <div id="credits">
-        https://www.deviantart.com/abysswolf/gallery/
-        https://www.youtube.com/watch?v=z7lEUnG3x1I
-        https://www.youtube.com/watch?v=QY1Vetd7OCs
-        https://www.youtube.com/watch?v=_d8LO2swXz8
-        https://www.deviantart.com/tag/nanakiredxiii?offset=0
+        Character images by <a href="https://www.deviantart.com/abysswolf/gallery/" target="_blank">Abysswolf</a>
+        <br>
+        Music and Sounds <a href="https://www.youtube.com/watch?v=z7lEUnG3x1I" target="_blank">Mathew</a>
+        <br>
+        Background image by <a href="https://www.deviantart.com/tag/nanakiredxiii?offset=0" target="_blank">nanakiredxiii</a>        
 </div>
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>

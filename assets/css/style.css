@@ -2,13 +2,42 @@ body{
     background-image: url("../images/final_fantasy_7___ending_scene_by_umta-d88v1ja.png");
     background-repeat: no-repeat;
     background-color: gray;
-    width: 980px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 600px;
+    margin-left: 500px;
+    color: rgb(0, 252, 252);
+    text-shadow: 1.5px 1.5px black;
+    font-family: "MedievalSharp", "cursive";
 }
+
 header {
+    font-weight: bold;
     text-align: center;
+    /* text-shadow: 3px 3px white; */
+    font-family: "Abril Fatface", "cursive";
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation-name: startMessage; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: startMessage;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes startMessage {
+    from {left:-100px; bottom:-50px;opacity: 0;}
+    to {left: 300px;bottom:400px;opacity: 1;transform: rotate(1440deg);}
+}
+
+@keyframes startMessage {
+    from {left:-100px; bottom:-50px;opacity: 0;}
+    to {left: 330px;bottom:400px;opacity: 1;transform: rotate(1440deg);}
+}
+
+
+
 
 .char{
     text-align: center;
@@ -16,31 +45,78 @@ header {
     height: 150px;
     width: 120px;
     background-color: rgb(0, 252, 252);
-    border: 10px outset rgb(56, 56, 56);
+    border: 10px outset rgb(68, 67, 67);
     margin: 5px;
     float: left;  
 }
 p, .health{
     font-weight: bold;
+    color: black;
+    text-shadow: none;
 }
 .charImage{
     height: 100px;
     width: 100px;
 }
-#charPicked, #enemies, #defender{
-    width: 980px;
+#enemies, #charSelect {
+    width: 600px;
     height: 180px;
     clear: both;
 }
+#charPicked, #defender{
+    width: 150px;
+    height: 180px;
+    position: relative;
+}
+#charPicked {
+    margin-left: 120px;
+}
+#defender{
+    margin-right: 120px;
+}
+#rowHeader{
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+}
 
-button{
-    clear: both;
+#attack{
+    float: left;
+    background: linear-gradient(to bottom right, rgb(48, 48, 252) , rgb(3, 3, 82));
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+#restart{
+    float: right;
+    background: linear-gradient(to bottom left,  rgb(48, 48, 252) , rgb(3, 3, 82));
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 #battleLog{
-    width: 980px;
-    height: 50px;
+    width: 400px;
+    clear: both;
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    bottom: 180px;
 }
+.bp{
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+}
+
 .nemesis{
     background-color: red;
+}
+
+a{
+    text-shadow:1px 1px black; 
+    color: red;
 }
