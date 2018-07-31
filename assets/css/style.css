@@ -1,4 +1,6 @@
 body{
+    background-image: url("../images/final_fantasy_7___ending_scene_by_umta-d88v1ja.png");
+    background-repeat: no-repeat;
     background-color: gray;
     width: 980px;
     margin-left: auto;
@@ -17,6 +19,9 @@ header {
     border: 10px outset rgb(56, 56, 56);
     margin: 5px;
     float: left;  
+}
+p, .health{
+    font-weight: bold;
 }
 .charImage{
     height: 100px;
